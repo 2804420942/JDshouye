@@ -1,0 +1,272 @@
+.grid{
+	height: 480px;
+}
+/* 左边导航栏部分 */
+.grid-col1{
+	width: 189px;
+	height: 100%;
+	font-size: 14px;/* 不是给字的,给/ */
+	background-color: #fefefe;
+    color: #636363;
+    border-top: 1px solid #dedede;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    position: relative;
+}
+.grid-col1 a{
+	font-size: 14px;
+	margin: 0 3px;
+	color: #626262;
+}
+.grid-col1 a:hover{
+	color: #c81623;
+}
+.grid-col1 ul{
+	padding: 6px 0;
+}
+.grid-col1 ul li{
+	padding-left: 12px;
+	height: 26px;
+	line-height: 26px;
+}
+.grid-col1 ul li:hover{
+	background-color: #9c9698;
+}
+.ad{
+	width: 300px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -300px;
+	cursor: pointer;
+}
+.ad-l{
+	width: 300px;
+	height: 480px;
+	background: url(../images/ad1.jpg);	
+}
+.ad-r{
+	position: absolute;
+	top: 0;
+	left: 300px;
+	width: 0px;
+	height: 480px;
+	background: url(../images/ad2.jpg);
+	z-index: 999;
+}
+.grid-col1 .ad:hover .ad-r{
+	width: 560px;
+	transition: all 0.5s;
+}
+/* banner部分 */
+.grid-col2{
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+.grid-col2-t{
+	float: left;
+	margin-top: 5px;
+	position: relative;
+}
+.grid-col2-b img{
+	float: right;
+	margin: 5px 0px;
+}
+.arrow-l,.arrow-r{
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	font-size: 30px;
+	color: rgba(255,255,255,.6);
+	font-family: arial;
+	font-weight: normal;
+}
+.arrow-r{
+	right: 0;
+}
+.circle{
+	width: 175px;
+	height: 20px;
+	background: rgba(0,0,0,.6);
+	position: absolute;
+	left: 20%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 10px;
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px;
+	cursor: pointer;
+
+}
+.circle .current{
+	background-color: #f10215;
+}
+/* 右边用户部分 */
+.grid-col3{
+	width: 190px;
+	height: 100%;
+}
+.login{
+	height: 148px;
+	border: 1px solid #ccc;
+	position: relative;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+.login .user-img{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 60px;
+	top: -5px;
+	left: 65px;
+}
+.login .user-name{
+	position: absolute;
+	display: block;
+	top: 60px;
+	height: 20px;
+	width: 100%;
+	line-height: 20px;
+	text-align: center;
+}
+.user-name a{
+	font-size: 12px;
+}
+.user-name i{
+	font-style: normal;
+	color: #ccc;
+	font-size: 12px;
+}
+.user-login{
+	position: absolute;
+	top: 80px;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+}
+.user-login a{
+	margin-right: 3px;
+}
+.user-member{
+	position: absolute;
+	top: 105px;
+	height: 50px;
+	width: 190px;
+}
+.user-member ul{
+	display: block;
+	float: left;
+	text-align: center;
+}
+.user-member li{
+	float: left;
+	height: 25px;
+	width: 52px;
+	border-radius: 10%;
+	margin-left:20px; 
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3)
+}
+.user-member li a:hover{
+	color: rgb(255,255,255);
+}
+.user-member li:hover{
+	background-color: rgb(202,51,21);
+}
+.user-member .a{
+	background-color: rgb(255,255,255);
+}
+.user-member .a a{
+	color: rgb(228,63,59);
+}
+.user-member .b{
+	margin-left: 30px;
+	background-color: rgb(54,54,52);
+}
+.news{
+	height: 132px;
+	border: 1px solid #ccc;
+	margin-bottom: 8px;
+	padding: 7px 13px 0;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3)
+	box-sizing: border-box ;
+}
+.news-t{
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a{
+	float: left;
+	height: 17px;
+	line-height: 17px;
+	font-weight: 700;
+}
+.news-t div{
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+}
+.cuxiao{
+	width: 38px;
+	border-right: 1px solid #ccc;
+}
+.news-t .gg{
+	margin-left: 15px;
+}
+.news-t .more{
+	float: right;
+}
+
+.news-b{
+	padding-top: 10px;
+}
+.news-b a{
+	height: 23px;
+	line-height: 23px;
+}
+
+.expand{
+	height: 165px;
+	border: 1px solid #ccc;
+	padding: 12px 12px 8px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3)
+}
+.expand li{
+	width: 40px;
+	height: 55px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+.expand a{
+	display: block;
+	padding-top: 8px;
+	text-align: center;
+}
+.expand li i{
+	width: 16px;
+	height: 22px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../images/iphone.png) no-repeat;
+}
+.expand li:first-child i{
+
+}
+
